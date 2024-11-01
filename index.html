@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <title>WeHelp Bootcamp Application</title>
+    <style>
+        
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #eeeeee; 
+            color: #333333; 
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 800px;
+            padding: 50px;
+            background-color: #ffefce;
+            border: 8px solid #8b0000;
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            font-family: 'Pixelify Sans';
+            font-size: 2.8em;
+            color: #8b0000;
+            text-shadow: 2px 2px #333333;
+            margin-bottom: 1em;
+        }
+        h2 {
+            font-size: 1em;
+            color: #ffffff;
+            background-color: #8b0000;
+            padding: 10px;
+            margin: 0;
+            border-bottom: 4px solid #333333;
+        }
+        .question-block {
+            background-color: #f5f5f5;
+            border: 4px solid #8b0000;
+            margin-top: 1.5em;
+            padding: 35px;
+            box-shadow: 0 8px 0 #333333;
+            text-align: left;
+        }
+        p {
+            font-size: 1em;
+            color: #333333; 
+            text-align: left;
+        }
+        .slide-image {
+            position: absolute;
+            width: 100px;
+            animation: slide 4s infinite linear;
+        }
+        @keyframes slide {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: calc(100% - 100px);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>WeHelp Bootcamp Application</h1>
+    <div class="question-block">
+        <h2>Q1. 個人簡介和申請動機。</h2>
+        <p>我最早接觸 coding 的經驗來自「高中生程式解題系統」，高中時我原先以申請資工系為目標，後來輾轉考上政大英文系。基於對理工專業的執念，我選擇雙主修「數位內容與科技學士學程」，學習介面設計、Java 動畫、數位藝術創作等強調跨領域的課程。</p>
+        <p>畢業後，我並未像身邊的同學成為 UI/UX 設計師或網頁工程師，而在音樂資料庫公司擔任編輯至今，背後的原因是命運順水推舟。在學期間，我雖課業繁忙，卻依然花時間研究興趣，我喜歡彈吉他，買簡單的設備玩宅錄，也在部落格寫樂評。憑運氣和天份，我開始接到藝人專訪和音樂文章邀稿，其中最值得螢光筆畫線 highlight 的合作夥伴是 Apple Music。最初出於分享音樂的心情寫下文字，卻在兩、三年後把我帶到了現在的公司與職位。</p>
+        <p>我的工作主要負責幫音樂資料加上 metadata，比如專輯名、歌曲名、發行公司、發行年份、曲風等。隨疫情後產業轉型，許多公司將資源投入自動化流程，我們公司也不例外。當工程師都去支援建立自動化系統，其他部門的 request 時常擠不進他們的代辦事項中。為不受影響按時完成工作，我主動接下 data scraping 的任務，負責幫編輯部把所需的榜單資料弄到手。</p> 
+        <p>我自學在網路上找到免費資源的 Web Scraper，過程中發現它可以處理的資料很有限，比如若要巡覽音樂榜單常見的 DatePicker，就必須動用 Python，而我的技能遠遠不夠。這個阻礙使我動念想重拾學生時期，在音樂之外被我遺落的另一個興趣——寫程式。加上近兩年公司人事變動頻繁，我自覺是暫停下來充實新技能的時機。</p>    
+        <p>市面上有許多 boot camp 課程，我最終選擇 WeHelp 的原因有二。一是老師教學的方式淺顯易懂。學習 Web Scraper 期間，為了對 HTML 和 CSS 有更完整的認識，我在 YouTube 搜尋到彭彭老師的教學影片，發現對我來說很容易吸收。再者是我很欣賞與信任 WeHelp 課程安排的方式，需學員自主學習，尤其培養獨立解決問題的能力。據我過去零星學習程式的經驗，coding 的靈魂是 debug，透過不斷 debug 錯誤、找到解決方法，便能持續累積經驗、提升技能。為此，我已做好離職安排，非常期待能加入 WeHelp，挑戰紮實的訓練，讓自己具備未來二、三十年在職場走跳的第二專長。</p>
+    </div>
+    <div class="question-block">
+        <h2>Q2. 曾經做過哪些軟體工程技術相關的學習？若有作品請分享給我們。</h2>
+        <p>我接觸過的類型是資料工程及資料處理，因為在資料庫公司上班，對 metadata 、database 和 data scraping 相對有實務上的需求。曾讀過《Metadata 後設資料》、《一次搞懂資料庫》、《圖解：資料科學》等書籍，對資料庫結構有一定程度瞭解。</p>
+        <p>另外，我在自學 Web Scraper 後，抓取過<a href="https://kma.kkbox.com/charts/yearly/newrelease?lang=tc&terr=tw&year=2023">KKBOX 2023 年終榜</a>，以下是 sitemap：</p>
+        <p>{"_id":"kkbox_yearly_chart_2023","startUrl":["[https://kma.kkbox.com/charts/yearly/newrelease?lang=tc&terr=tw&year=2023"],"selectors":[{"id":"content](https://kma.kkbox.com/charts/yearly/newrelease?lang=tc&terr=tw&year=2023%22%5D,%22selectors%22:%5B%7B%22id%22:%22content) block","multiple":true,"parentSelectors":["_root"],"selector":"li.charts-list-row:nth-of-type(n+2) a","type":"SelectorElement"},{"id":"rank","multiple":false,"parentSelectors":["content block"],"regex":"","selector":"span.charts-list-rank","type":"SelectorText"},{"id":"track","multiple":false,"parentSelectors":["content block"],"regex":"","selector":".layer1 span.charts-list-song","type":"SelectorText"},{"id":"artist","multiple":false,"parentSelectors":["content block"],"regex":"","selector":".layer1 span.charts-list-artist","type":"SelectorText"},{"id":"rdate","multiple":false,"parentSelectors":["content block"],"regex":"","selector":".layer1 span.charts-list-date","type":"SelectorText"}]}</p>
+        <p>很感謝彭彭老師放上 YouTube 的 HTML、CSS 教學影片，讓我對網頁架構有更全面的認識，才能在工作上流暢使用 Web Scraper。我也順著教學影片找到老師的網站，認識 WeHelp Bootcamp，一直偷偷放在公司電腦的書籤，等待能斷然離職參加的那一天。</p>
+    </div>
+    <div class="question-block">
+        <h2>Q3. 如果參與這個訓練，會怎麼安排學習時間？</h2>
+        <p>已和主管談好年底離職，離職後就緊接著開始 bootcamp，因此我會維持和工作時一樣的作息，早上九點開始學習、做作業，下午六點休息。晚餐及運動後若仍有當日未完成進度，則利再用一、二個小時完成。我的理想是盡量不熬夜，週間做不完的利用假日白天補齊。自疫情開始至今，我一直都是在家遠端工作，上述的時間安排，也是我過去兩、三年習慣的生活步調。</p>
+    </div>
+    <div class="question-block">
+        <h2>Q4. 軟體技術日新月異，如何確定選擇投入的領域是正確有回報的？</h2>
+        <p>我覺得程式設計是非常實在又用途廣泛的 hard skill，加上 WeHelp 的課程側重網站前、後端開發，現在幾乎沒有哪一家公司或企業不需要維護網站，尤其需求最大的可能是電商。我覺得人類的生活型態已被科技改變，未來的生活重心只為越來越往線上發展，一如賽博龐克所預言的 high tech low life。擁有架設網站能力，就代表擁有很大程度選擇工作的自由，想在哪個產業工作、做什麼樣的產品甚至要自己創業都可以。就算不開發網站，拿 coding 的能力提升工作效率，和身邊的工程師朋友一起做有趣的 side project 也很開心。我是一個非常熱愛 DIY 精神的人，一如 90 年代的搖滾樂，我相信在 WeHelp 學到的東西能幫助我走的更廣、更遠，工作及個人生活皆然。</p>
+        <p>此外，過去的經驗也讓我相信，天底下沒有白走的路，所有經歷和學習都會有意義。不見得是實質的技能最後幫助你，而是當進入一個新的領域，便有機會學習看待事情不同的方法，進而從不同角度切入解決問題。學習不同知識、認識新的人，對我來說最可貴的就是收穫自己不曾擁有過的思考，這對我來說就是最大的回報。</p>
+    </div>
+    <div class="question-block">
+        <h2>Q5. 請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</h2>
+        <p>約莫兩年前，我經歷了人生第一次恐慌發作，之後就是心理復健的漫漫長路。心理健康問題真的遠比工作難題棘手，因為人的感受模糊又抽象，要找出自己的問題點不容易。過程中我除定期回診，也嘗試諮商、冥想、呼吸、瑜珈，目前已將自己調整到穩定狀態。短短幾句就能說完，但恢復身心平衡真的花了我很長時間。我常和朋友笑稱我已獨自升級為 2.0，在復健途中學習到適調適壓力和焦慮的方法對我來說很管用，無論是三十分鐘散步、二十分鐘瑜珈或十分鐘冥想。而從這段經歷走過來，也給予我信心面對人生接下來的挑戰。</p>
+    </div>
+    <div class="question-block">
+        <h2>Q6. 關於這份申請網頁，分享一個開發時的技術心得。</h2>
+        <p>因曾兼職寫文章，我在構思網頁呈現時很重視閱讀舒適度，包括排版、字型、行距等。對我來說，看別人的申請表或許是件無聊的事，我試圖在頁面上增加一點視覺趣味，比如配色參考任天堂紅白機，並在最下方加一隻跑跑瑪利歐當作彩蛋。</p>
+        <p>整個 HTML 架構我使用 ChatGPT 輔助，主要用於畫出骨架，內容則依照我的想法慢慢填入及微調。AI 輔助開發真的能提升不少效率，讓人有更多時間思考設計等更關乎人性層面、細節的事情。在這樣的時間點開始學 coding 或許是好事，尤其能協助有效率地糾錯，但隨時要記得謹慎使用。抱著期待的心情，我想驗證更多 ChatGPT 對程式開發的影響。</p>
+    </div>
+    <div class="question-block">
+        <h2>Q7. 如何看待自身工作和整個社會群體的連結關係？</h2>
+        <p>無論從事什麼行業，對我來說最重要的，是幫助別人解決問題，這也是我的成就感來源。我覺得自己有很強大的付出型人格，幫助別人帶給我的快樂很難被其他事物所取代。大學時，我在數位內容與科技學程選修不少設計課（平面視覺、品牌重塑、手機 APP），設計思考有個重要的核心觀念——設計就是要解決問題。在深度學習設計過後，這個觀念就一直深植我心，陪伴我度過在職場的每一天。當遇到工作流程效率不佳時可以重新設計，產品不夠反映需求更要重新設計，而就在我努力以設計思維解決工作上的每個小問題時，我也認為自己正在幫世界往更好、更有效率的方向運作。</p>
+    </div>
+        <img src="https://media.tenor.com/mQIeFKwl_IIAAAAj/8bit-mario-runing.gif" alt="mario" class="slide-image">
+</div>
+</body>
+</html>
